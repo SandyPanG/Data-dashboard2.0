@@ -11,7 +11,7 @@ console.log(Object.keys(data));//sedes
 // console.table(data);
 
 for (var i = 0; i < seat.length; i++) {
-    // data[i].students[2];
+    var cohort = Object.keys(data[seat[i]]);
     console.log(Object.keys(data[seat[i]]));
     
 }
