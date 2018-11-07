@@ -23,6 +23,8 @@ selectSeat.addEventListener ('click', function() {
 
         var cohort = Object.keys(data[seat[i]]);
         console.log(Object.keys(data[seat[i]]));
+
+        
         
     }
 })
