@@ -1,6 +1,22 @@
 /*
  * Estilos de tu proyecto
+ font-family: 'Titillium Web', sans-serif;
  */
+
+ body {
+    font-family: 'Titillium Web', sans-serif;
+ }
+
+ #main-container {
+     margin-top: 10vh;
+     text-align: center;
+     left: 30%;
+ }
+
+.rounded {
+    width: 15%;
+}
+
 .custom-select {
     width: 50%;
 }

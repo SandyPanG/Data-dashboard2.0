@@ -5,32 +5,20 @@
 // Puedes hacer uso de la base de datos a través de la variable `data`
 // console.log(data);
 
-var seat = Object.keys(data);
-console.log(Object.keys(data));//sedes
+let enter = document.getElementById('enter-button');
+console.log(enter);
 
-window.addEventListener ('load', function(){
-var selectSeat = document.getElementById('seat');
+let seat = document.getElementById('seat');
 
-selectSeat.addEventListener ('click', function() {
-    var menu = document.createElement('div');
+let seatChange = seat.addEventListener('change', function(){
+	let seatChange= seat.options[seat.selectedIndex].value;
 
-    for (var i = 0; i < seat.length; i++) {
-        var select = document.createElement('ul');
-        var selectName = document.createElement('li');
-        selectName.innerHTML = seat[i];
-        selectName.id = seat[i];
-        select.appendChild(selectName);
+	console.log(seatChange);
+	let getGen = (seatChange);
 
-        var cohort = Object.keys(data[seat[i]]);
-        console.log(Object.keys(data[seat[i]]));
 
-        
-        
-    }
-})
-
+	// datos por generacion
+	getGen =  (seat) => {
+		console.log(data[seat]);
+	};
 });
-
-// console.table(data);
-
-
