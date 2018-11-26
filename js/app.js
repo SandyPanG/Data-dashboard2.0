@@ -14,11 +14,15 @@ let seatChange = seat.addEventListener('change', function(){
 	let seatChange= seat.options[seat.selectedIndex].value;
 
 	console.log(seatChange);
-	let getGen = (seatChange);
+	let getGen = seatChange;
 
 
 	// datos por generacion
 	getGen =  (seat) => {
 		console.log(data[seat]);
 	};
+	enter.addEventListener('click', function(){
+	window.location.href='overview.html?sede='+ seatChange;
+});
+
 });
