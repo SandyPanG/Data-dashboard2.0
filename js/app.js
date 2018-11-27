@@ -6,7 +6,7 @@
 // console.log(data);
 
 let enter = document.getElementById('enter-button');
-console.log(enter);
+// console.log(enter);
 
 let seat = document.getElementById('seat');
 
